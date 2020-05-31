@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
 {% load static %}
 <!doctype html>
 <html>
@@ -333,6 +335,7 @@ span.psw {
 </head>
 
 <body>
+
 	<div id="main_cont" class="bor">
     	<div id="toph" class="bor">
         	<div id="ticon"> 
@@ -356,11 +359,11 @@ span.psw {
         	
             <div id="menu" class="bor"> 
             	<ul id="tmenu" class="bor">
-                	<li> SERVICES</li>
-                    <li> BLOG</li>
-                    <li> WEBINARS</li>
-					<li> CONSULTING</li>
-					<li> OUR WORK</li>
+                	<a href="{% url 'home' %}"><li> SERVICES</li></a>
+                    <a href="{% url 'about' %}"><li> ABOUT</li></a>
+                    <a href="{% url 'home' %}"><li> WEBINARS</li></a>>
+					<a href="{% url 'home' %}"><li> CONSULTING</li></a>
+					<a href="{% url 'home' %}"><li> OUR WORK</li></a>
                 </ul>
             </div>
             
@@ -521,7 +524,6 @@ window.onclick = function(event) {
 
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
-
-
+{% endblock %}
 </body>
 </html>

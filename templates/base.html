@@ -1,0 +1,48 @@
+<header>
+<style>
+
+#hmenu{
+		width:1070px;
+		height:55px;
+		color: #F9F5F6;		
+		margin-top:-25px;
+		margin-left:131px;}
+		
+	#ttmenu{
+		list-style:none;
+		margin-left:0px;
+		background-color:#03577e;
+        }
+		
+	#ttmenu	li {
+		display:inline-block;
+		margin-left:14px;
+		padding:10px 40px 10px 40px;
+		color:#ffffff;
+		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+		font-size:17px;
+		}		
+
+	#ttmenu	li:hover {
+		background-color:#dd3333;
+		color:white;
+		}
+    .bor{
+	border: 1px solid cyan;
+	border-color:transparent;
+	}
+</style>    
+
+    <div id="hmenu" class="bor"> 
+        <ul id="ttmenu" class="bor">
+            <a href="{% url 'home' %}"><li> SERVICES</li></a>
+            <a href="{% url 'about' %}"><li> ABOUT</li></a>
+            <a href="{% url 'home' %}"><li> WEBINARS</li></a>>
+            <a href="{% url 'home' %}"><li> CONSULTING</li></a>
+            <a href="{% url 'home' %}"><li> OUR WORK</li></a>
+        </ul>
+    </div>
+</header>
+  
+{% block content %}
+{% endblock %}
