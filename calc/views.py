@@ -9,3 +9,12 @@ def home(request):
 
 class AboutPageView(TemplateView): # new
     template_name = 'about.html'
+
+class WebinarPageView(TemplateView): # new
+    template_name = 'webinar.html'    
+
+class ConsultingPageView(TemplateView): # new
+    template_name = 'consulting.html'         
+
+class WorkPageView(TemplateView): # new
+    template_name = 'work.html'
