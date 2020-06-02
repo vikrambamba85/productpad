@@ -2,4 +2,627 @@
 {% block content %}
 {% load static %}
 <h1>This is work section</h1>
-{% endblock %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Chamko</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://chamko.me/assets/css/font-awesome.min.css">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://chamko.me/assets/css/responsive.css">
+		<script src="https://chamko.me/assets/js/jquery.min.js"></script> 
+		<script src="https://chamko.me/assets/js/custom.js"></script>
+		<script src="https://chamko.me/assets/js/angular.js"></script>
+				<script>
+// change password javascript
+$("#btnLogin").click(function(event) {
+    
+    var form = $("#loginForm");
+    
+    if (form[0].checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    
+    // if validation passed form
+    // would post to the server here
+    
+    form.addClass('was-validated');
+});
+</script>
+		<script>
+			var app = angular.module('app', []);
+		</script> 
+	</head>
+	<body>
+  <div class="header-wrapper">
+      <div class="header">
+        <div class="inner-logo pull-left"><img src="http://chamko.me/assets/images/inner-logo.png"></div>
+        <div class="pull-right">
+          <a href="change.html" title="Change Password" class="btn btn-light border"><i class="fa fa-lock" aria-hidden="true"></i></a>
+          <div class="pull-right"><a href="http://chamko.me/profile/logout"  title="logout" class="btn btn-light border"><i class="fa fa-power-off" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+		
+		<div class="profile-wrapper">
+			<div class="left-panel">
+				<div class="profile-info">
+					<a href="./user-profile.html"><div class="profile-photo"><img src="assets/images/profile-photo.jpg"></a>
+					<div class="profile-rank">Rank <span>210</span></div></div>
+					<!--div class="profile-name">vaibhav</div-->
+					<div class="profile-name">Vaibhav</div>
+					<a href="earning.html" class="btn btn-light edit-profile"><i class="fa fa-rupee"style="color:black"></i> Earning</a>
+					<!--div class="profile-desc">Lorem ipsum dolor sit amet</div-->
+						<div class="profile-desc">yipeee...!!!</div>
+					<div class="profile-designation">Dancer</div>
+					<div class="profile-address">Noida, Uttar Pradesh</div>
+					<a href="edit-profile.html" class="btn btn-light edit-profile"><i class="fas fa-file-alt"style="color:black"></i> Edit Profile</a>
+				</div>
+				<div class="links">
+					<ul>
+						<li class="active"><a href="profile.html" class="profile">Profile</a></li>
+						<li><a href="task.html" class="task">Task</a></li>
+						<li><a href="activity.html" class="activity">Activity</a></li>
+						<li><a href="leader-board.html" class="leader">Leader</a></li>
+						<li><a href="#" class="notification">Notification</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		<div class="row no-gutters">
+				<div class="col-md-7">
+				<div class="alert alert-warning">
+				<strong>Warning!</strong> Please update your bank details to encash earned revenue.
+				</div>
+			</div>
+				
+				<div class="col-md-2 d-md-block d-none"></div>
+				<div class="col-md-3 add-link">
+					<a href="javascript:void(0)" class=" btn btn-light" data-toggle="modal" data-target="#add-link">POST WORK</a>
+				</div>
+		</div>
+			
+			<div class="row no-gutters mt-4">
+			
+				<div class="col-md-4 p-md-2 pt-2 pb-2">
+				
+					<div class="project-box">
+						<div class="project-block">							
+							<h5>Task of the Day</h5>							
+						<div class="task-question">What is Lorem Ipsum?</div>
+						<div>
+						<input type="checkbox" class="read-more-state" id="post-1" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores tempore eos deserunt officia quis ab? Excepturi vero tempore minus beatae voluptatem vanhuta hshjyahung!</p>
+						</div>
+						</div>
+						<!--div class="apply-panel"></span><a href="#" class="pull-right btn btn-light border">Apply</a></div-->
+					 <div class="apply-panel"><button type="button" class="pull-right btn btn-light border" data-toggle="modal" data-target="#mediumModal">Apply </button></div>
+						<div class="share-box"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a></div>
+					</div>
+		
+				</div>
+			<div class="col-md-4 p-md-2 pt-2 pb-2">
+            <div class="project-box">
+              <div class="scroll-box">
+                <div class="project-block">
+                  <div class="scroll-bar-wrap">
+                    <h5>Progress Bar</h5>
+                    <!--div class="task-question"><u>Target:00</u></div-->
+                    <h6 class="text-success">Task1 : 20/40</h6>
+                    <div class="progress mb-2">
+                      <div class="progress-bar bg-chamko3 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6 class="text-success">Task2 : 20/100</h6>
+                    <div class="progress mb-2">
+                      <div class="progress-bar bg-chamko2 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6 class="text-success">Task3 : 75/100</h6>
+                    <div class="progress mb-2">
+                      <div class="progress-bar bg-chamko1 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6 class="text-success">Task4 : 90/100</h6>
+                    <div class="progress mb-2">
+                      <div class="progress-bar bg-chamko4 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6 class="text-success">Task5 : 90/100</h6>
+                    <div class="progress mb-2">
+                      <div class="progress-bar bg-chamko1 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6 class="text-success">Task6 : 90/100</h6>
+                    <div class="progress mb-2">
+                      <div class="progress-bar bg-chamko2 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6 class="text-success">Task7 : 90/100</h6>
+                    <div class="progress mb-2">
+                      <div class="progress-bar bg-chamko3 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>				
+				<div class="row no-gutters mt-4">
+				<div class="col-md-4 p-md-2 pt-2 pb-2">
+					<div class="project-box">
+						<div class="project-block">
+							<div class="photo"><img src="assets/images/profile-photo.jpg"></div>
+							<div class="project-info"><span>vaibhav</span>Dancer<br>Noida, Uttar Pradesh</div>
+						</div>
+						<div class="project-image"><img src="assets/images/project-img.jpg" class="w-100"></div>
+						<div class="project-desc">Dancing Robotics Part-2 #Dancing<span>Watch and Follow vaibhav for latest</span></div>
+						<div class="share-box"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a> <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a></div>
+					</div>
+				</div>
+				<div class="col-md-4 p-md-2 pt-2 pb-2">
+					<div class="project-box for-link">
+						<div class="project-block ">
+							<div class="photo"><img src="assets/images/profile-photo.jpg"></div>
+							<div class="project-info"><span>vaibhav</span>Dancer<br>Noida, Uttar Pradesh</div>
+						</div>
+						<div class="project-desc">http://t4talented.com</div>
+						<div class="share-box"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a> <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a></div>
+					</div>
+				</div>
+				<div class="col-md-4 p-md-2 pt-2 pb-2">
+					<div class="project-box">
+						<div class="project-block">
+							<div class="photo"><img src="assets/images/profile-photo.jpg"></div>
+							<div class="project-info"><span>vaibhav</span>Dancer<br>Noida, Uttar Pradesh</div>
+						</div>
+						<div class="project-image"><img src="assets/images/project-img.jpg" class="w-100"></div>
+						<div class="project-desc">Dancing Robotics Part-2 #Dancing<span>Watch and Follow vaibhav for latest</span></div>
+						<div class="share-box"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a> <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a></div>
+					</div>
+				</div>
+				<div class="col-md-4 p-md-2 pt-2 pb-2">
+					<div class="project-box">
+						<div class="project-block">
+							<div class="photo"><img src="assets/images/profile-photo.jpg"></div>
+							<div class="project-info"><span>vaibhav</span>Dancer<br>Noida, Uttar Pradesh</div>
+						</div>
+						<div class="project-image"><img src="assets/images/project-img.jpg" class="w-100"></div>
+						<div class="project-desc">Dancing Robotics Part-2 #Dancing<span>Watch and Follow vaibhav for latest</span></div>
+						<div class="share-box"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a> <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a></div>
+					</div>
+				</div>
+				<div class="col-md-4 p-md-2 pt-2 pb-2">
+					<div class="project-box">
+						<div class="project-block">
+							<div class="photo"><img src="assets/images/profile-photo.jpg"></div>
+							<div class="project-info"><span>vaibhav</span>Dancer<br>Noida, Uttar Pradesh</div>
+						</div>
+						<div class="project-image"><img src="assets/images/project-img.jpg" class="w-100"></div>
+						<div class="project-desc">Dancing Robotics Part-2 #Dancing<span>Watch and Follow vaibhav for latest</span></div>
+						<div class="share-box"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a> <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a></div>
+					</div>
+				</div>
+				<div class="col-md-4 p-md-2 pt-2 pb-2">
+					<div class="project-box">
+						<div class="project-block">
+							<div class="photo"><img src="assets/images/profile-photo.jpg"></div>
+							<div class="project-info"><span>vaibhav</span>Dancer<br>Noida, Uttar Pradesh</div>
+						</div>
+						<div class="project-image"><img src="assets/images/project-img.jpg" class="w-100"></div>
+						<div class="project-desc">Dancing Robotics Part-2 #Dancing<span>Watch and Follow vaibhav for latest</span></div>
+						<div class="share-box"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a> <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<div class="modal fade" id="add-link" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title font-weight-bold w-100 d-table text-center" id="exampleModalLongTitle">Post New Work</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			   <div class="modal-body">
+				<div class="add-link-wrapper">
+					<div class="row m-0 p-0">
+						<div class="col-md-12 border-bottom mb-2 icon-social"><span class="d-table w-100">Select Social Platform</span>
+							<div class="dropdown w-100">
+							  <button class="btn btn-light bg-transparent shadow-none border-0 text-left pl-0 dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Facebook
+							  </button>
+							  <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							  </div>
+							</div>
+							</div>
+						<div class="col-md-12 border-bottom mb-2 icon-category"><span class="d-table w-100">Select Task</span>
+							<div class="dropdown w-100">
+							  <button class="btn btn-light bg-transparent shadow-none border-0 text-left pl-0 dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								 Task1
+							  </button>
+							  <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							  </div>
+							</div>
+						</div>
+						
+						<div class="col-md-12 icon-add-link"><span class="d-table w-100">Post Work</span>
+							<input type="text" placeholder="Enter url" class="border-0 pt-2 pr-2 pb-2 w-100">
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="modal-footer popup-add-link">
+				<button type="button" class="btn btn-primary">POST WORK</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="modal fade bd-example-modal-lg" id="applied-tasks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title font-weight-bold w-100 d-table text-center" id="exampleModalLongTitle">Applied Task</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#accepted" role="tab" aria-controls="home" aria-selected="true">Accepted</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#rejected" role="tab" aria-controls="profile" aria-selected="false">Rejected</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#pending" role="tab" aria-controls="contact" aria-selected="false">Pending</a>
+				  </li>
+				</ul>
+				<div class="tab-content border border-top-0" id="myTabContent">
+				  <div class="tab-pane fade show active" id="accepted" role="tabpanel" aria-labelledby="home-tab">
+					<div class="pop-height">
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-success font-weight-bold pb-0">Applied</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-success font-weight-bold pb-0">Applied</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-success font-weight-bold pb-0">Applied</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-success font-weight-bold pb-0">Applied</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="tab-pane fade" id="rejected" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="pop-height">
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-danger font-weight-bold pb-0">Rejected</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-danger font-weight-bold pb-0">Rejected</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-danger font-weight-bold pb-0">Rejected</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-danger font-weight-bold pb-0">Rejected</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="contact-tab">
+					<div class="pop-height">
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-info font-weight-bold pb-0">Pending</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-info font-weight-bold pb-0">Pending</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-info font-weight-bold pb-0">Pending</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-info font-weight-bold pb-0">Pending</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 <!-- modal apply -->
+    <div class="modal fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mediumModalLabel">Required Platform Links</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-6 mb-3 icon-hello">
+              <span class="d-table w-100"><b>Helo App<b></span>
+              <input type="text" ng-model="Helo" placeholder="Enter Helo Profile Link" class="w-100 ng-pristine ng-untouched ng-valid ng-empty">
+            </div>
+            <div class="col-md-6 mb-3 icon-schat">
+              <span class="d-table w-100"><b>Share Chat<b></span>
+              <input type="text" ng-model="Sharechat" placeholder="Enter Sharechat Profile Link" class="w-100 ng-pristine ng-untouched ng-valid ng-empty">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal apply -->
+				<div class="modal fade bd-example-modal-lg" id="applied-tasks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title font-weight-bold w-100 d-table text-center" id="exampleModalLongTitle">Applied Task</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#accepted" role="tab" aria-controls="home" aria-selected="true">Accepted</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#rejected" role="tab" aria-controls="profile" aria-selected="false">Rejected</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#pending" role="tab" aria-controls="contact" aria-selected="false">Pending</a>
+				  </li>
+				</ul>
+				<div class="tab-content border border-top-0" id="myTabContent">
+				  <div class="tab-pane fade show active" id="accepted" role="tabpanel" aria-labelledby="home-tab">
+					<div class="pop-height">
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-success font-weight-bold pb-0">Applied</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-success font-weight-bold pb-0">Applied</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-success font-weight-bold pb-0">Applied</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-success font-weight-bold pb-0">Applied</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="tab-pane fade" id="rejected" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="pop-height">
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-danger font-weight-bold pb-0">Rejected</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-danger font-weight-bold pb-0">Rejected</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-danger font-weight-bold pb-0">Rejected</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-danger font-weight-bold pb-0">Rejected</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="contact-tab">
+					<div class="pop-height">
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-info font-weight-bold pb-0">Pending</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-info font-weight-bold pb-0">Pending</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4 mr-0 mb-4 ml-0 p-0">
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-info font-weight-bold pb-0">Pending</span></div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-md-0 mb-4">
+								<div class="task-wrapper">
+									<div class="task-head">Task 1</div>
+									<div class="task-question">What is Lorem Ipsum?</div>
+									<div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+									<div class="task-img"><img src="assets/images/task-img.jpg"></div>
+									<div class="apply-panel"><span class="pull-left pb-0">Posted On: 29 June 2019</span><span class="pull-right text-info font-weight-bold pb-0">Pending</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+        </div>
+        {% endblock %}
+	</body>
+</html>
